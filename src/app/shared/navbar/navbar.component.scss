@@ -1,0 +1,22 @@
+nav {
+    .logo {
+        height: 50px;
+    }
+    a {
+        color: black;
+        &:hover {
+            color: #5f8288;
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .logo {
+        height: 40px !important;
+    }
+    .nav-item {
+        display: flex;
+        justify-content: center;
+    }
+}

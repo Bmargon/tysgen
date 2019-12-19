@@ -1,0 +1,35 @@
+footer {
+    background-color: #F8F9FA;
+    .footer {
+        padding: 2rem 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .derechos {
+            align-self: flex-end;
+        }
+    }
+}
+
+.promo {
+    background-color: #ffffff;
+    p {
+        text-align: center;
+        padding: 0.5rem;
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            color: #333333;
+        }
+    }
+}
+
+@media screen and ( max-width: 468px) {
+    .footer {
+        flex-direction: column !important;
+        h5,
+        p {
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+<div class="jumbotron jumbotron-fluid bg-light mt-5 mb-0">
+    <div class="container">
+        <h1 class="display-4 mt-3">Donde encontrarnos</h1>
+    </div>
+</div>
+<div class="container-fluid">
+    <agm-map [zoom]="6" [latitude]="latg" [longitude]="lngg">
+        <agm-marker [latitude]="lat1" [longitude]="lng1">
+            <agm-info-window>
+                <img width="200px" src="../../../assets/img/logo.png" alt="">
+                <h3>Sede Central</h3>
+                <p>Aranda de Duero, Burgos</p>
+                <button [routerLink]="['/delegacion']" class="btn btn-danger"> Más información</button>
+            </agm-info-window>
+
+        </agm-marker>
+        <agm-marker [latitude]="lat2" [longitude]="lng2">
+            <agm-info-window>
+                <img width="200px" src="../../../assets/img/logo.png" alt="">
+
+                <h3>Delegación</h3>
+                <p>Barcelona</p>
+                <button [routerLink]="['/delegacion']" class="btn btn-danger"> Más información</button>
+
+            </agm-info-window>
+        </agm-marker>
+
+    </agm-map>
+</div>
